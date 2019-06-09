@@ -55,7 +55,8 @@ python -m pip install matplotlib
 可以自由修改选股策略文件，根据自身需求选股，执行完成后，数据保存在当前用户文件夹下./tmp/stockholm_export/<br>以用户所选日期到进行倒推n天得选股策略测试。<br>选股策略的测试文件<br>
 ```shell
 
-[测试方法1]:day(-2).{KDJ_J}<20 and day(-1).{KDJ_J}<20 and day(0).{KDJ_J}-day(-1).{KDJ_J}>=40 and day(0).{Vol_Change}>=1 and day(0).{MA_10}*1.05>day(0).{Close}
+[测试方法1]:day(-2).{KDJ_J}<20 and day(-1).{KDJ_J}<20 and day(0).{KDJ_J}-day(-1).{KDJ_J}>=40 
+          and day(0).{Vol_Change}>=1 and day(0).{MA_10}*1.05>day(0).{Close}
 ```
 ![选股测试图片](./interface3.png)<br>
 #
@@ -82,24 +83,11 @@ python main.py [-h] [--reload {Y,N}] [--portfolio {Y,N}]
   "Name": "广誉远",
   "Data": [
     {
-      "Open": 28.49,
-      "Close": 29.8,
-      "High": 29.82,
-      "Chg": "4.56%",
-      "Low": 28.49,
-      "Volume": 51180,
-      "Date": "2019-03-11",
-      "Turnover": "15067.08",
-      "TurnoverRate": "1.69%",
-      "Change": 0.04561,
-      "Vol_Change": -0.16364,
-      "MA_5": 29.587,
-      "MA_10": 29.439,
-      "MA_20": 28.623,
-      "MA_30": 27.309,
-      "KDJ_K": 55.372,
-      "KDJ_D": 63.013,
-      "KDJ_J": 40.09
+      "Open": 28.49,"Close": 29.8,"High": 29.82,"Chg": "4.56%","Low": 28.49,
+      "Volume": 51180,"Date": "2019-03-11","Turnover": "15067.08",
+      "TurnoverRate": "1.69%","Change": 0.04561,"Vol_Change": -0.16364,
+      "MA_5": 29.587,"MA_10": 29.439,"MA_20": 28.623,"MA_30": 27.309,
+      "KDJ_K": 55.372,"KDJ_D": 63.013,"KDJ_J": 40.09
     }
   ]
 }
@@ -125,37 +113,16 @@ Open(开盘价); Close(收盘价); High(当日最高); Low(当日最低); Date(�
   "MA_30": 4.134,
   "Data": [
     {
-      "Day_1_Profit": 0.00789,
-      "Day_1_INDEX_Change": 0.01354,
-      "Day_1_Differ": -0.0056500000000000005,
-      "Day_2_Profit": 0.0,
-      "Day_2_INDEX_Change": 0.00873,
-      "Day_2_Differ": -0.00873,
-      "Day_3_Profit": -0.03158,
-      "Day_3_INDEX_Change": -0.00935,
-      "Day_3_Differ": -0.022229999999999996,
-      "Day_4_Profit": -0.03684,
-      "Day_4_INDEX_Change": -0.0066,
-      "Day_4_Differ": -0.030239999999999996,
-      "Day_5_Profit": -0.02105,
-      "Day_5_INDEX_Change": 0.00537,
-      "Day_5_Differ": -0.02642,
-      "Day_6_Profit": -0.02368,
-      "Day_6_INDEX_Change": 0.01506,
-      "Day_6_Differ": -0.03874,
-      "Day_7_Profit": -0.02105,
-      "Day_7_INDEX_Change": 0.01275,
-      "Day_7_Differ": -0.0338,
-      "Day_8_Profit": -0.02895,
-      "Day_8_INDEX_Change": 0.00647,
-      "Day_8_Differ": -0.03542,
-      "Day_9_Profit": -0.03421,
-      "Day_9_INDEX_Change": 0.00332,
-    "Day_9_Differ": -0.037529999999999994,
-    "Day_10_Profit": -0.03947,
-    "Day_10_INDEX_Change": 0.00393,
-    "Day_10_Differ": -0.0434
-  }
+      "Day_1_Profit": 0.00789,"Day_1_INDEX_Change": 0.01354,"Day_1_Differ": -0.0056500000000000005,
+      "Day_2_Profit": 0.0,"Day_2_INDEX_Change": 0.00873,"Day_2_Differ": -0.00873,
+      "Day_3_Profit": -0.03158,"Day_3_INDEX_Change": -0.00935,"Day_3_Differ": -0.022229999999999996,
+      "Day_4_Profit": -0.03684,"Day_4_INDEX_Change": -0.0066,"Day_4_Differ": -0.030239999999999996,
+      "Day_5_Profit": -0.02105,"Day_5_INDEX_Change": 0.00537,"Day_5_Differ": -0.02642,
+      "Day_6_Profit": -0.02368,"Day_6_INDEX_Change": 0.01506,"Day_6_Differ": -0.03874,
+      "Day_7_Profit": -0.02105,"Day_7_INDEX_Change": 0.01275,"Day_7_Differ": -0.0338,
+      "Day_8_Profit": -0.02895,"Day_8_INDEX_Change": 0.00647,"Day_8_Differ": -0.03542,
+      "Day_9_Profit": -0.03421,"Day_9_INDEX_Change": 0.00332,"Day_9_Differ": -0.037529999999999994,
+      "Day_10_Profit": -0.03947,"Day_10_INDEX_Change": 0.00393,"Day_10_Differ": -0.0434 }
 ]
 ```
 Close(收盘价); Change(价格变化%); Vol_Change(成交量较前日变化); MA_10(十天均价); KDJ_K(KDJ指标K); KDJ_D(KDJ指标D); KDJ_J(KDJ指标J); Day_1_Profit(后一天利润率%); Day_1_INDEX_Change(后一天沪深300变化率%); Day_1_Differ(后一天相对利润率%——即利润率-沪深300变化率); 
