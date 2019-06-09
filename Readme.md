@@ -45,7 +45,7 @@ python -m pip install matplotlib
 
 使用方法
 -------------
-###1. 图形界面<br>
+### 1. 图形界面<br>
 #### 主界面：可以选择股票数据、股票预测选项
 ![界面图片](./interface.png)<br>
 #
@@ -67,7 +67,7 @@ python -m pip install matplotlib
 ####股票预测界面(可以预测下一个工作日的股票收盘价）<br>
 ![股票预测图片](./interface5.png)<br>
 
-###2. 命令行运行<br>
+### 2. 命令行运行<br>
 ```shell
 python main.py [-h] [--reload {Y,N}] [--portfolio {Y,N}] 
                [--output {json,csv,all}] [--storepath PATH] [--thread NUM] 
