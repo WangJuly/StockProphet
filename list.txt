@@ -1,0 +1,44 @@
+卷 Data 的文件夹 PATH 列表
+卷序列号为 8A84-6901
+D:.
+│  interface.png
+│  interface2.png
+│  interface3.png
+│  interface4.png
+│  interface5.png
+│  list.txt
+│  Readme.md
+│  stock.jpg
+│  
+├─build
+│  └─GUI
+│          Analysis-00.toc
+│          base_library.zip
+│          EXE-00.toc
+│          GUI.exe.manifest
+│          PKG-00.pkg
+│          PKG-00.toc
+│          PYZ-00.pyz
+│          PYZ-00.toc
+│          Tree-00.toc
+│          Tree-01.toc
+│          warn-GUI.txt
+│          xref-GUI.html
+│          
+├─dist
+│      GUI.exe
+│      
+├─stockprophet
+│      GUI.py
+│      learning.py
+│      learningtest.py
+│      portfolio_test.txt
+│      stock.jpg
+│      stockholm.py
+│      
+└─__pycache__
+        GUI.cpython-37.pyc
+        learning.cpython-37.pyc
+        learningtest.cpython-37.pyc
+        stockholm.cpython-37.pyc
+        
