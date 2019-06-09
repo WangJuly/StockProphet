@@ -53,7 +53,7 @@ python -m pip install matplotlib
 可以选择获取单支或者全部股票的数据，存取到CSV或者JSON文件
 ![股票数据图片](./interface2.png)<br>
 #
-####选股测试界面
+#### 选股测试界面
 可以自由修改选股策略文件，根据自身需求选股，执行完成后，数据在当前用户文件夹下./tmp/stockholm_export/<br>以当前系统日期为目标日期进行倒推n天得选股策略测试。<br>选股策略的测试文件<br>
 ```shell
 
