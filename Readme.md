@@ -23,7 +23,7 @@ Python 3以上<br>
 [matplotlib](https://matplotlib.org/)<br>
 [pandas](http://pandas.pydata.org/)<br>
 [scikit-learn](https://scikit-learn.org/stable/)<br>
-
+**命令行安装：**<br>
 ```shell
 pip install requests
 pip install pymongo
@@ -52,7 +52,7 @@ python -m pip install matplotlib
 ![股票数据图片](./interface2.png)<br>
 #
 #### 选股测试界面
-可以自由修改选股策略文件，根据自身需求选股，执行完成后，数据保存在当前用户文件夹下./tmp/stockholm_export/<br>以用户所选日期到进行倒推n天得选股策略测试。<br>选股策略的测试文件<br>
+可以自由修改选股策略文件，根据自身需求选股，执行完成后，数据保存在当前用户文件夹下./tmp/stockholm_export/。以用户所选日期到进行倒推n天得选股策略测试。<br>选股策略的测试文件<br>
 ```shell
 
 [测试方法1]:day(-2).{KDJ_J}<20 and day(-1).{KDJ_J}<20 and day(0).{KDJ_J}-day(-1).{KDJ_J}>=40 
